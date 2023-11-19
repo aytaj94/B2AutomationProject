@@ -9,7 +9,7 @@ public class NavigateToAmazon {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get("");
+        driver.get("https://www.amazon.com");
         driver.manage().window().maximize();
         driver.navigate().back();
         driver.navigate().forward();
