@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Locators {
     public static void main(String[] args) {
-        // setuo driver
+        // setup driver
         WebDriverManager.chromedriver().setup();
 
         // create the driver object
