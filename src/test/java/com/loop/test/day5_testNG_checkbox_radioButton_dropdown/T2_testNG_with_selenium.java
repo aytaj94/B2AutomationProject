@@ -45,6 +45,7 @@ public class T2_testNG_with_selenium {
         System.out.println("((RemoteWebDriver) driver).getSessionId() = " + ((RemoteWebDriver) driver).getSessionId());
         expected = "Docuport";
         actual = driver.getTitle();
-        Assert.assertTrue(actual.contains(expected), "Actual does no match expected");
+        Assert.assertEquals(actual, expected, "Actual: " + actual + "does not match expected: " + expected);
+
     }
 }
