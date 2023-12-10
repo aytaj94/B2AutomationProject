@@ -49,14 +49,15 @@ public class Task2 {
     }
 
     @Test
-    public void ringSearchTest(){
+    public void ringSearchTest() throws InterruptedException {
         WebElement placeSearch = driver.findElement(By.xpath("//input[@id='global-enhancements-search-query']"));
         String textToSearch = "rings";
+        Thread.sleep(3000);
         placeSearch.sendKeys(textToSearch + Keys.ENTER);
-        WebElement estimatedArrivalAnyTime = driver.findElement(By.xpath("//body[@class='ui-toolkit transitional-wide is-responsive no-touch en-US USD US etsy-has-it-design wt-focus-visible']"));
-        estimatedArrivalAnyTime.click();
-        //WebElement estimatedArrivalAnyTime = driver.findElement(By.xpath("//span[@class='wt-screen-reader-only']"));
+        //WebElement estimatedArrivalAnyTime = driver.findElement(By.xpath("//body[@class='ui-toolkit transitional-wide is-responsive no-touch en-US USD US etsy-has-it-design wt-focus-visible']"));
         //estimatedArrivalAnyTime.click();
+        WebElement estimatedArrivalAnyTime = driver.findElement(By.xpath("((//span[@class='wt-text-reader-caption'])[1]"));
+        estimatedArrivalAnyTime.click();
         //WebElement selectCustomDate = driver.findElement(By.xpath("//select[@id='locale-overlay-select-region_code']"));
         //selectCustomDate.click();
         //WebElement chooseDec15 = driver.findElement(By.xpath("//div['data-above-header']"));
@@ -65,7 +66,7 @@ public class Task2 {
         //estimatedArrivalByDec15.click();
 
 
-        driver.close();
+        driver.quit();
 
 
 
