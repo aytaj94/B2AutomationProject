@@ -16,7 +16,7 @@ public class T1_locators_getText {
         driver.get("https://beta.docuport.app");
 
         WebElement userName = driver.findElement(By.id("input-14"));
-        userName.sendKeys(DocuportConstants.USERNAME_CLIENT);
+        userName.sendKeys(DocuportConstants.USERNAME_CLIENT1);
 
         WebElement loginButton = driver.findElement(By.className("v-btn__content"));
         loginButton.click();
