@@ -24,10 +24,10 @@ public class Task1 {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.get("https://beta.docuport.app/");
         WebElement username =driver.findElement(By.id("input-14"));
-        username.sendKeys(DocuportConstants.USERNAME_CLIENT);
+        username.sendKeys(DocuportConstants.USERNAME_CLIENT1);
         username.click();
         WebElement password= driver.findElement(By.id("input-15"));
-        password.sendKeys(DocuportConstants.PASSWORD_CLIENT);
+        password.sendKeys(DocuportConstants.PASSWORD_CLIENT1);
         password.click();
         WebElement loginButton=driver.findElement(By.className("v-btn__content"));
         loginButton.click();
