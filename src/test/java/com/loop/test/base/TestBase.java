@@ -3,6 +3,7 @@ package com.loop.test.base;
 import com.loop.test.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
+import static org.testng.Assert.*;
 
 public class TestBase {
 

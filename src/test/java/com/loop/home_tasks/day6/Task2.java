@@ -32,20 +32,20 @@ public class Task2 extends TestBase {
         WebElement childIframeText = driver.findElement(By.xpath("//p[text() = 'Child Iframe']"));
         actual = childIframeText.getText();
         expected = "Child Iframe";
-        //Assert.assertEquals(actual, expected, "Actual does not match the expected");
+        Assert.assertEquals(actual, expected, "Actual does not match the expected");
 
 
         driver.switchTo().parentFrame();
         WebElement parentIframeText = driver.findElement(By.xpath("//body[.='Parent frame']"));
         actual = parentIframeText.getText();
         expected = "Parent Iframe";
-        //Assert.assertEquals(actual, expected, "Actual does not match the expected");
+        Assert.assertEquals(actual, expected, "Actual does not match the expected");
 
         driver.switchTo().defaultContent();
         WebElement sampleNestedIframePage = driver.findElement(By.xpath("//div[contains(text(),'Sample')]"));
         actual = sampleNestedIframePage.getText();
         expected = "Sample Nested Iframe page.There are nested iframes in this page. Use browser inspecter or firebug to check out the HTML source. In total you can switch between the parent frame and the nested child frame.";
-        //Assert.assertEquals(actual, expected,"Actual does not match the expected");
+        Assert.assertEquals(actual, expected,"Actual does not match the expected");
         driver.quit();
 
 
