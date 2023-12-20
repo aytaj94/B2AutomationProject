@@ -19,7 +19,7 @@ public class DocuportUtils {
         driver.get("https://beta.docuport.app/");
         WebElement username = driver.findElement(By.xpath("//label[.='Username or email']//following-sibling::input"));
         WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
-        WebElement loginBUtton = driver.findElement(By.xpath("//button[@type='submit']"));
+        WebElement login = driver.findElement(By.xpath("//button[@type='submit']"));
         switch (role.toLowerCase()){
             case "client":
                 username.sendKeys(DocuportConstants.USERNAME_CLIENT1);
@@ -40,7 +40,7 @@ public class DocuportUtils {
             default: throw new InputMismatchException("There us not such a role: " + role);
         }
 
-        loginBUtton.click();
+        login.click();
 
         if(role.toLowerCase().equals("client")){
             Thread.sleep(3000);

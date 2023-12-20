@@ -9,5 +9,14 @@ public class T00_login_docuport extends TestBase {
     public void test_login_docuport() throws InterruptedException {
         DocuportUtils.login(driver, DocuportConstants.CLIENT1);
         DocuportUtils.logOut(driver);
+
+        DocuportUtils.login(driver, DocuportConstants.USERNAME_ADVISOR1);
+        DocuportUtils.logOut(driver);
+
+        DocuportUtils.login(driver, DocuportConstants.USERNAME_EMPLOYEE1);
+        DocuportUtils.logOut(driver);
+
+        DocuportUtils.login(driver, DocuportConstants.USERNAME_SUPERVISOR1);
+        DocuportUtils.logOut(driver);
     }
 }
