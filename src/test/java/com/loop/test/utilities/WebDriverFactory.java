@@ -9,9 +9,9 @@ import org.openqa.selenium.safari.SafariDriver;
 public class WebDriverFactory {
 
     /*
-     *create a static method getDriver
-     *Accepts
-     *
+     * create a static method getDriver
+     * Accepts argument String - browserType
+     * return webdriver
      */
     //this is java doc
 
