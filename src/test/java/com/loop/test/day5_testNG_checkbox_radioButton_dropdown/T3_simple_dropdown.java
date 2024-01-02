@@ -38,7 +38,7 @@ public class T3_simple_dropdown {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         // create dropdown
         // WebElement dropdownElement = driver.findElement(By.xpath("//select[@id='dropdown']"));
-        Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));
+        Select dropdown = new Select(driver.findElement(By.xpath("")));
         actual = dropdown.getFirstSelectedOption().getText();
         Assert.assertEquals(actual, expected, "Actual does not match expected");
 
